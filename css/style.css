@@ -257,7 +257,7 @@ body {
     margin-bottom: 3.5rem; }
 
 .card {
-  width: 18rem;
+  width: 21rem;
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -274,7 +274,7 @@ body {
     width: 100%; }
   .card__img {
     width: 100%;
-    height: 22rem; }
+    height: 25rem; }
   .card__title {
     font-size: 1.1rem;
     color: #333;
@@ -458,3 +458,58 @@ body {
   justify-content: center;
   align-items: center;
   padding: 1.5rem 2rem; }
+
+.comment {
+  width: 80%;
+  display: flex; }
+  .comment:not(:last-child) {
+    margin-bottom: 3rem; }
+  .comment__avator:link, .comment__avator:visited, .comment__avator:active {
+    display: block;
+    align-self: flex-end; }
+  .comment__details {
+    flex: 0 0 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 1rem; }
+  .comment__ut {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 0.8rem; }
+  .comment__author:link, .comment__author:visited {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000; }
+  .comment__time {
+    padding-left: 0.8rem;
+    font-size: 1.5rem; }
+  .comment__content {
+    line-height: 1.5;
+    padding: 0 0.8rem;
+    color: #333;
+    font-size: 1.35rem;
+    margin-top: 0.5rem; }
+  .comment__react {
+    margin-top: 1rem;
+    padding: 0 0.8rem;
+    display: flex;
+    align-items: center; }
+    .comment__react-icon {
+      width: 1.8rem;
+      height: 1.8rem;
+      display: flex;
+      fill: var(--color-primary); }
+    .comment__react-count {
+      font-size: 1.5rem;
+      margin-left: 1rem; }
+    .comment__react-btn {
+      cursor: pointer;
+      background-color: #fff;
+      border: none; }
+
+.avatar {
+  width: 4.5rem;
+  border-radius: 5px; }

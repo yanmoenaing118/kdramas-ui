@@ -1,0 +1,85 @@
+.comment {
+  width: 80%;
+  display: flex;
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+
+  &__avator {
+    &:link,
+    &:visited,
+    &:active {
+      // flex:0 0 10%;
+      display: block;
+      align-self: flex-end;
+    }
+  }
+
+  &__details {
+    flex: 0 0 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 1rem;
+  }
+
+  &__ut {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 0.8rem;
+  }
+
+  &__author {
+    &:link,
+    &:visited {
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-decoration: none;
+        color: #000;
+    }
+  }
+
+  &__time {
+    padding-left: 0.8rem;
+    font-size: 1.5rem;
+  }
+
+  &__content {
+    line-height: 1.5;
+    padding: 0 0.8rem;
+    color: #333;
+    font-size: 1.35rem;
+    margin-top: 0.5rem;
+
+  }
+  &__react {
+    margin-top: 1rem;
+    padding: 0 0.8rem;
+    display: flex;
+    align-items: center;
+    &-icon {
+      width: 1.8rem;
+      height: 1.8rem;
+      display: flex;
+      fill: var(--color-primary);
+    }
+
+    &-count {
+      font-size: 1.5rem;
+      margin-left: 1rem;
+    }
+
+    &-btn {
+      cursor: pointer;
+      background-color: #fff;
+      border: none;
+    }
+  }
+}
+
+.avatar {
+  width: 4.5rem;
+  border-radius: 5px;
+}
