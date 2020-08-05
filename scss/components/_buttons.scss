@@ -1,0 +1,37 @@
+.btn {
+  display: block;
+  padding: 1.5rem 3rem;
+  background-color: #fff;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 0.2rem 0.5rem #ddd;
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1.7rem;
+  color: purple;
+
+  &:focus {
+    outline: none;
+  }
+  &:active {
+    outline: none;
+    transform: translateY(3px);
+  }
+
+  &--login {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    color: inherit;
+    transition: all 0.2s;
+
+    &:hover {
+      border-bottom: 1px solid #ccc;
+      box-shadow: 0 0.3rem 0.5rem #ddd;
+    }
+  }
+}

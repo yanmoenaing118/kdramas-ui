@@ -1,0 +1,26 @@
+:root {
+  --bsh: 0 0.6rem 2rem rgba(0,0,0,0.18);
+  --color-primary: rgb(112, 234, 100);
+}
+
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: arial, serif;
+}
+
+body {
+    box-sizing: border-box;
+    font-size: 1.6rem;
+    padding: 3rem 0;
+    color: #777;
+    background-image: linear-gradient(to bottom right, #9be15d 0%, #00e3ae 100%);
+}

@@ -1,0 +1,83 @@
+.form {
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+  &__group {
+    display: flex;
+    flex-direction: column;
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+
+  }
+
+  &__submit {
+    text-align: center;
+    padding: 1.5rem 1rem;
+  }
+
+  &__label {
+    text-transform: uppercase;
+    padding: 0.5rem 0;
+  }
+
+  &__input {
+    font-size: inherit;
+    padding: 1.5rem 1rem;
+    border: none;
+    background-color: rgba(225, 225, 225, 0.3);
+    transition: all 0.3s;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0.5rem 0.8rem rgba(0,0,0,0.1);
+      border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
+    }
+
+    &::placeholder {
+
+      color: #ddd;
+      font-weight: 600;
+    }
+  }
+
+
+
+  &-setting {
+    padding: 1.6rem 0;
+    &:not(:last-child) {
+      margin-bottom: 5rem;
+    }
+  }
+
+  &-auth {
+    margin-top: 5rem;
+    background-color: #fff;
+    border: 3px solid green;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 3rem #ccc;
+  }
+
+  &-heading {
+    text-transform: uppercase;
+    position: absolute;
+    top: -3rem;
+    left:2.5rem;
+    background-color: #fff;
+    letter-spacing: 1.8px;
+    padding:1rem 1rem;
+    border-radius: 10px;
+    box-shadow: 0 -0.5rem 0.5rem #ccc;
+
+  }
+
+}
+
+.switch-ls {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 2rem;
+}

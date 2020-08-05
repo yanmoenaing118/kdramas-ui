@@ -1,0 +1,59 @@
+.card {
+  width: 18rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.5;
+  transition: all 0.3s;
+  box-shadow: 0 0.2rem 0.1rem rgba(#000,0.2);
+  background-color: #fff;
+  text-decoration: none;
+
+  &__link {
+    text-decoration: none;
+    color: inherit;
+  }
+  &__avator {
+    width: 100%;
+  }
+
+  &__img {
+    width: 100%;
+    height: 22rem;
+  }
+
+  &__title {
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 700;
+    padding: 0.3rem 1rem;
+
+  }
+
+  &__info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__genre {
+    font-size: 1.1rem;
+    padding-left: 0.8rem;
+  }
+
+  &__rating {
+    height: 100%;
+    font-size: 1.8rem;
+    background-color: #9be15d;
+    padding: 0.5rem;
+    font-weight: 700;
+    color: #bf7951;
+  }
+
+  &:hover {
+    box-shadow: var(--bsh);
+    transform: scale(1.01);
+  }
+}

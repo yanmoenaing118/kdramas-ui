@@ -1,0 +1,30 @@
+.social-acc {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &:not(:last-child) {
+    margin-right: 3.5rem;
+  }
+
+  &__icon {
+
+    width: 3.4rem;
+    height: 3.4rem;
+
+    &--fb {
+      fill: blue;
+    }
+  }
+
+  &__label {
+    height: 100%;
+    color: #555;
+    padding: 0 10rem;
+    font-size: 1.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+
+}
