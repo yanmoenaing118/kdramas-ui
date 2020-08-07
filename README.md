@@ -1,5 +1,5 @@
 # author Yan Moe Naing 
-# email yanmoenaing.webdev.1234@gmail.com
+# email yan.webdev.1234@gmail.com
 
 # kdramas-ui
 Design For my Korean Dramas Project
