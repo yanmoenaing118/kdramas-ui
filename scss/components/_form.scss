@@ -3,6 +3,7 @@
   margin: 0 auto;
   position: relative;
   &__group {
+    position: relative;
     display: flex;
     flex-direction: column;
     &:not(:last-child) {

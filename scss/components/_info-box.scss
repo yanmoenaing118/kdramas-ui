@@ -1,10 +1,11 @@
 .info-box {
   padding: 1rem 2rem;
+  backface-visibility: hidden;
 
   &__icon {
     width: 100%;
     height: 100%;
-    fill: currentColor;
+    fill: #00e600;
   }
 
   &__title {
@@ -17,7 +18,7 @@
     align-items: center;
     padding: 1rem 0.5rem;
     background-color: #fff;
-    transition: all 0.3s;
+    transition: all 0.4s;
     background-clip: text;
 
     &:not(:last-child) {
@@ -45,8 +46,8 @@
 
     &:hover {
       transform: translateY(-3px);
-      box-shadow: 0 0.2rem 0.3rem rgba(0,0,0,0.3);
-      color:  #00e3ae;
+      box-shadow: 0 0.2rem 0.2rem rgba(0,0,0,0.3);
+      color:  #00e600;
     }
   }
 

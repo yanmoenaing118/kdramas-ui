@@ -63,7 +63,7 @@
       width: 1.8rem;
       height: 1.8rem;
       display: flex;
-      fill: var(--color-primary);
+      fill: #00e600;
     }
 
     &-count {
@@ -76,6 +76,17 @@
       background-color: #fff;
       border: none;
     }
+  }
+
+  &-box {
+    width: 70%;
+    margin-bottom: 7rem;
+  }
+
+  &-input {
+    padding: 1.6rem;
+    color: inherit;
+    font-family: inherit;
   }
 }
 
