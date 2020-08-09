@@ -257,7 +257,6 @@ body {
       box-shadow: 0 0.3rem 0.5rem #ddd; }
   .btn--comment {
     padding: 1rem 2rem;
-    width: 130px;
     margin-top: -1rem;
     position: absolute;
     right: 0; }
