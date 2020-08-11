@@ -1,13 +1,13 @@
 .btn {
   padding: 1.5rem 3rem;
-  background-color: #fff;
+  background-image: linear-gradient(to bottom right, #9be15d 0%, #00e3ae 100%);
   cursor: pointer;
   border: none;
   box-shadow: 0 0.2rem 0.5rem #ddd;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1.7rem;
-  color: purple;
+  color: #fff;
   display: inline-block;
   // width: 150px;
 
@@ -22,11 +22,16 @@
   &--login {
     text-decoration: none;
     text-transform: uppercase;
-    padding: 0.5rem 1rem;
-    background-color: #fff;
+    padding: 1rem 1.5rem;
+    background-image: linear-gradient(
+      to bottom right,
+      #9be15d 0%,
+      #00e3ae 100%
+    );
+
     cursor: pointer;
     margin-left: 0.5rem;
-    color: inherit;
+    color: #fff;
     transition: all 0.2s;
 
     &:hover {
@@ -41,6 +46,15 @@
     margin-top: -1rem;
     position: absolute;
     right: 0;
-
   }
+
+  &--logout {
+    width: 150px;
+    margin-top: 1rem;
+  }
+}
+
+.btn-form__button--save {
+  position: absolute;
+  right: 0;
 }

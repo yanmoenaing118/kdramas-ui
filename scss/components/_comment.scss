@@ -34,10 +34,10 @@
   &__author {
     &:link,
     &:visited {
-        font-size: 1.5rem;
-        font-weight: 700;
-        text-decoration: none;
-        color: #000;
+      font-size: 1.5rem;
+      font-weight: 700;
+      text-decoration: none;
+      color: #000;
     }
   }
 
@@ -52,7 +52,6 @@
     color: #333;
     font-size: 1.35rem;
     margin-top: 0.5rem;
-
   }
   &__react {
     margin-top: 1rem;
@@ -79,14 +78,16 @@
   }
 
   &-box {
-    width: 70%;
+    width: 100%;
     margin-bottom: 7rem;
+    position: relative;
   }
 
   &-input {
     padding: 1.6rem;
     color: inherit;
     font-family: inherit;
+    resize: none;
   }
 }
 

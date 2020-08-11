@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>User Account</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="header">
@@ -54,80 +54,110 @@
       </div>
     </header>
     <main class="main">
-      <section class="section-cover">
-        <div class="profile-cover">
-          <img src="images/user-2.jpeg" alt="" class="profile-cover__photo">
+      <div class="user-profile">
+        <div class="social-cover">
+          <section class="section-cover">
+            <div class="profile-cover">
+              <img
+                src="images/user-2.jpeg"
+                alt=""
+                class="profile-cover__photo"
+              />
+            </div>
+          </section>
+
+          <section class="section-social">
+            <!-- <div class="title-bar">
+            <h2 class="title-bar__heading">Social</h2>
+          </div> -->
+            <div class="social-acc">
+              <svg class="social-acc__icon social-acc__icon--fb">
+                <use xlink:href="images/sprite.svg#icon-facebook2"></use>
+              </svg>
+            </div>
+
+            <div class="social-acc">
+              <svg class="social-acc__icon social-acc__icon--fb">
+                <use xlink:href="images/sprite.svg#icon-twitter"></use>
+              </svg>
+            </div>
+
+            <div class="social-acc">
+              <svg class="social-acc__icon social-acc__icon--fb">
+                <use xlink:href="images/sprite.svg#icon-instagram"></use>
+              </svg>
+            </div>
+          </section>
+
+          <button class="btn btn--logout" id="btnLogout">logout</button>
         </div>
-      </section>
 
-      <section class="section-social">
-        <!-- <div class="title-bar">
-          <h2 class="title-bar__heading">Social</h2>
-        </div> -->
-        <div class="social-acc">
-          <svg class="social-acc__icon social-acc__icon--fb">
-            <use xlink:href="images/sprite.svg#icon-facebook2"></use>
-          </svg>
-        </div>
+        <section class="section-setting">
+          <div class="acc-setting">
+            <div class="error__updateData">*Error Updating user data!</div>
+            <div class="title-bar">
+              <h2 class="title-bar__heading">Account Settings</h2>
+            </div>
 
-        <div class="social-acc">
-          <svg class="social-acc__icon social-acc__icon--fb">
-            <use xlink:href="images/sprite.svg#icon-twitter"></use>
-          </svg>
+            <form class="form form-setting">
+              <div class="form__group">
+                <label for="name" class="form__label">Name</label>
+                <input type="text" class="form__input" id="name" />
+              </div>
 
-        </div>
+              <div class="form__group">
+                <label for="email" class="form__label">Email</label>
+                <input type="email" class="form__input" id="email" />
+              </div>
 
-        <div class="social-acc">
-          <svg class="social-acc__icon social-acc__icon--fb">
-            <use xlink:href="images/sprite.svg#icon-instagram"></use>
-          </svg>
-        </div>
+              <div class="form__group">
+                <label for="photo" class="choose-file-btn">
+                  Change Photo
+                </label>
+                <input type="file" name="photo" id="photo" />
+              </div>
 
-
-      </section>
-
-      <section class="section-setting">
-        <!-- <div class="title-bar">
-          <h2 class="title-bar__heading">Setting</h2>
-        </div> -->
-
-        <form class="form form-setting">
-          <div class="form__group">
-            <label for="name" class="form__label">Name</label>
-            <input type="text" class="form__input" id="name">
+              <div class="form__group">
+                <button class="btn btn-form__button--save" id="saveBtnData">
+                  Save Changes
+                </button>
+              </div>
+            </form>
           </div>
 
-          <div class="form__group">
-            <label for="email" class="form__label">Email</label>
-            <input type="email" class="form__input" id="email">
+          <div class="psw-setting">
+            <div class="error__updatePsw">Error Updating password!</div>
+            <div class="title-bar">
+              <h2 class="title-bar__heading">Change Password</h2>
+            </div>
+
+            <form class="form form-setting">
+              <div class="form__group">
+                <label class="form__label">Current password</label>
+                <input type="password" class="form__input" />
+              </div>
+
+              <div class="form__group">
+                <label class="form__label">New password</label>
+                <input type="password" class="form__input" />
+              </div>
+
+              <div class="form__group">
+                <label class="form__label">Confirm password</label>
+                <input type="password" class="form__input" />
+              </div>
+
+              <div class="form__group">
+                <button class="btn btn-form__button--save" id="saveBtnPsw">
+                  Save Password
+                </button>
+              </div>
+            </form>
           </div>
-
-          <button class="btn btn-form__button--save">Save Changes</button>
-        </form>
-
-        <hr>
-
-        <form class="form form-setting">
-          <div class="form__group">
-            <label class="form__label">Current password</label>
-            <input type="password" class="form__input">
-          </div>
-
-          <div class="form__group">
-            <label class="form__label">New password</label>
-            <input type="password" class="form__input">
-          </div>
-
-          <div class="form__group">
-            <label class="form__label">Confirm password</label>
-            <input type="password" class="form__input">
-          </div>
-
-          <button class="btn btn-form__button--save">Save Password</button>
-
-        </form>
-      </section>
-
+        </section>
+      </div>
     </main>
+
+    <script src="/js/index.js"></script>
   </body>
 </html>

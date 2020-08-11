@@ -1,0 +1,25 @@
+.choose-file-btn {
+  padding: 1rem 2.5rem;
+  background-image: linear-gradient(
+    to right bottom,
+    rgb(155, 225, 93) 0%,
+    rgb(0, 204, 238) 100%
+  );
+
+  width: 200px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  z-index: 2000;
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+#photo {
+  position: absolute;
+  font-size: inherit;
+  z-index: 1000;
+  left: 99px;
+  top: 0.8rem;
+}

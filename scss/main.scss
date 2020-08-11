@@ -3,6 +3,7 @@
 @import "./typography";
 @import "./layout";
 @import "./pages";
+// @import "./grid";
 
 @import "./components/navbar";
 @import "./components/search";
@@ -15,3 +16,5 @@
 @import "./components/profile-cover";
 @import "./components/form";
 @import "./components/comment";
+@import "./components/choose-file";
+@import "./components/error";

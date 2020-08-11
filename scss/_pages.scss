@@ -10,7 +10,7 @@
   &__img {
     flex: 1;
     align-self: stretch;
-    box-shadow: 0 0.5rem 0.8rem rgba(0,0,0,0.3);
+    box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.3);
   }
 
   &__drama {
@@ -33,12 +33,39 @@
   padding: 3.6rem 3rem;
   border-bottom: 2px solid #ccc;
   box-shadow: 0 0.1rem 0.2rem #ddd;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .section-setting {
   padding: 2rem 0;
+  margin-left: auto;
+  flex: 0 0 60%;
+  padding-left: 3rem;
+}
+
+.user-profile {
+  display: flex;
+}
+
+.section-error {
+  padding: 20rem;
+  position: relative;
+}
+
+.social-cover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.acc-setting {
+  position: relative;
+}
+
+.psw-setting {
+  position: relative;
+  margin-top: 6.5rem;
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <link rel="stylesheet" href="css/style.css" />
 
     <title>Sing up</title>
@@ -55,47 +55,67 @@
       </div> -->
 
       <div class="header__auth">
-        <a href="./login.html"class="btn--login">Login</a>
-        <a href="./signup.html"class="btn--login">sign up</a>
+        <a href="./login.html" class="btn--login">Login</a>
+        <a href="./signup.html" class="btn--login">sign up</a>
       </div>
     </header>
 
     <main class="main">
       <form class="form form-auth" autocomplete="off">
-
         <h2 class="form-heading">Sign up</h2>
+
+        <div class="error__auth">*Passwords are not the same!</div>
 
         <div class="form__group">
           <label for="name" class="form__label">Name</label>
-          <input type="text" class="form__input" id="name" placeholder="your name">
+          <input
+            type="text"
+            class="form__input"
+            id="name"
+            placeholder="your name"
+          />
         </div>
 
         <div class="form__group">
           <label for="email" class="form__label">Email</label>
-          <input type="email" class="form__input" id="email" placeholder="name@example.com">
+          <input
+            type="email"
+            class="form__input"
+            id="email"
+            placeholder="name@example.com"
+          />
         </div>
 
         <div class="form__group">
           <label class="form__label">password</label>
-          <input type="password" class="form__input" placeholder="....................">
+          <input
+            type="password"
+            class="form__input"
+            placeholder="...................."
+          />
         </div>
 
         <div class="form__group">
           <label class="form__label">password confirm</label>
-          <input type="password" class="form__input" placeholder="....................">
+          <input
+            type="password"
+            class="form__input"
+            placeholder="...................."
+          />
         </div>
         <div class="form__group">
           <div class="form__submit">
-            <button class="btn btn-form__button--save">submit</button>
+            <button class="btn" id="submitBtn-signup">submit</button>
           </div>
         </div>
       </form>
       <div class="switch-ls">
         <p class="switch-ls__content">
-          Already have an account? <a href="/login.html" class="switch-ls__signup">Log in</a> here!
+          Already have an account?
+          <a href="/login.html" class="switch-ls__signup">Log in</a> here!
         </p>
       </div>
     </main>
-
+    <script src="/js/index.js"></script>
   </body>
 </html>

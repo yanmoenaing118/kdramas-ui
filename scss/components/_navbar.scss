@@ -5,7 +5,6 @@
   justify-content: space-between;
 
   &__item {
-
   }
 
   &__link,
@@ -16,11 +15,10 @@
     transition: all 0.3s;
     padding: 0.8rem 1.5rem;
 
-
     &:hover {
       color: rgb(112, 234, 100);
       border-bottom: 2px solid rgb(112, 234, 100);
-      box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
       background-color: #fff;
     }
   }
@@ -40,7 +38,7 @@
     }
   }
 
-  &-link{
+  &-link {
     position: relative;
     &:visited,
     &:link {
@@ -71,15 +69,13 @@
 
       &:hover::before {
         opacity: 1;
-        box-shadow: 0 0.5rem 0.5rem rgba(0,0,0,0.1);
+        box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
       }
 
       &:active {
-        box-shadow: 0 0rem 0rem rgba(0,0,0,0.3);
+        box-shadow: 0 0rem 0rem rgba(0, 0, 0, 0.3);
         transform: translateY(3px);
       }
     }
   }
-
-
 }
